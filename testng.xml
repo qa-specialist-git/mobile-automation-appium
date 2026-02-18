@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Appium Test Suite" parallel="tests" thread-count="2">
+<groups>
+
+<run>
+<include name="sanity"></include>
+<include name="regression"></include>
+<!--<include name="datadriven"></include>-->
+</run>
+
+</groups>
+    <listeners>
+        <listener class-name="utilities.TestListener"/>
+    </listeners>
+
+    <!-- 🔹 Pixel_5 -->
+    <test name= "Pixel_5">
+        <parameter name="deviceName" value="Pixel_5"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="systemPort" value="8201"/>
+        <classes>
+            <class name="testCases.TC01_LaunchAppTest"/>
+            <class name="testCases.TC02_ShopSelectingUnitedStatesTest"/>
+            <class name="testCases.TC03_LetsShopTest"/>
+            <class name="testCases.TC04_AddToCartTest"/>
+            <class name="testCases.TC05_CompletePurchaseTest"/>
+            <class name="testCases.TC06_TermsAndConditionsTest"/>
+            <class name="testCases.TC07_ValidateToastMessageTest"/>
+        </classes>
+    </test>
+    
+     <!-- 🔹 Pixel_9 -->
+    <test name= "Pixel_9">
+        <parameter name="deviceName" value="Pixel_9"/>
+        <parameter name="udid" value="emulator-5556"/>
+        <parameter name="systemPort" value="8202"/>
+        <classes>
+            <class name="testCases.TC01_LaunchAppTest"/>
+            <class name="testCases.TC02_ShopSelectingUnitedStatesTest"/>
+            <class name="testCases.TC03_LetsShopTest"/>
+            <class name="testCases.TC04_AddToCartTest"/>
+            <class name="testCases.TC05_CompletePurchaseTest"/>
+            <class name="testCases.TC06_TermsAndConditionsTest"/>
+            <class name="testCases.TC07_ValidateToastMessageTest"/>
+        </classes>
+    </test>
+
+</suite>

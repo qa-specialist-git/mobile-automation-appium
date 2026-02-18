@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="appiumTests.ShopSelectingUnitedStates">
+        <methods>
+          <include name="ShopSelectingUnitedStatesTest"/>
+        </methods>
+      </class> <!-- appiumTests.ShopSelectingUnitedStates -->
+      <class name="appiumTests.CompletePurchase">
+        <methods>
+          <include name="CompletePurchaseTest"/>
+        </methods>
+      </class> <!-- appiumTests.CompletePurchase -->
+      <class name="appiumTests.ValidateToastMessage">
+        <methods>
+          <include name="ValidateToastMessageTest"/>
+        </methods>
+      </class> <!-- appiumTests.ValidateToastMessage -->
+      <class name="appiumTests.TermsAndConditions">
+        <methods>
+          <include name="AddToCartTest"/>
+        </methods>
+      </class> <!-- appiumTests.TermsAndConditions -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

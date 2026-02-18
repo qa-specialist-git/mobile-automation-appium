@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Appium Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Pixel_9(failed)">
+    <parameter name="udid" value="emulator-5556"/>
+    <parameter name="deviceName" value="Pixel_9"/>
+    <parameter name="systemPort" value="8202"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC07_ValidateToastMessageTest">
+        <methods>
+          <include name="validateToastMessageTest"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- testCases.TC07_ValidateToastMessageTest -->
+      <class name="testCases.TC05_CompletePurchaseTest">
+        <methods>
+          <include name="completePurchaseTest"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- testCases.TC05_CompletePurchaseTest -->
+      <class name="testCases.TC04_AddToCartTest">
+        <methods>
+          <include name="addToCartTest"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- testCases.TC04_AddToCartTest -->
+      <class name="testCases.TC03_LetsShopTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="letsShopTest"/>
+        </methods>
+      </class> <!-- testCases.TC03_LetsShopTest -->
+      <class name="testCases.TC06_TermsAndConditionsTest">
+        <methods>
+          <include name="verifyTermsAndConditions"/>
+        </methods>
+      </class> <!-- testCases.TC06_TermsAndConditionsTest -->
+      <class name="testCases.TC01_LaunchAppTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchAppTest"/>
+        </methods>
+      </class> <!-- testCases.TC01_LaunchAppTest -->
+      <class name="testCases.TC02_ShopSelectingUnitedStatesTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="selectUnitedStatesAndVerifyProducts"/>
+        </methods>
+      </class> <!-- testCases.TC02_ShopSelectingUnitedStatesTest -->
+    </classes>
+  </test> <!-- Pixel_9(failed) -->
+  <test thread-count="2" parallel="tests" name="Pixel_5(failed)">
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="deviceName" value="Pixel_5"/>
+    <parameter name="systemPort" value="8201"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC07_ValidateToastMessageTest">
+        <methods>
+          <include name="validateToastMessageTest"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- testCases.TC07_ValidateToastMessageTest -->
+      <class name="testCases.TC05_CompletePurchaseTest">
+        <methods>
+          <include name="completePurchaseTest"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- testCases.TC05_CompletePurchaseTest -->
+      <class name="testCases.TC04_AddToCartTest">
+        <methods>
+          <include name="addToCartTest"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- testCases.TC04_AddToCartTest -->
+      <class name="testCases.TC03_LetsShopTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="letsShopTest"/>
+        </methods>
+      </class> <!-- testCases.TC03_LetsShopTest -->
+      <class name="testCases.TC01_LaunchAppTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="launchAppTest"/>
+        </methods>
+      </class> <!-- testCases.TC01_LaunchAppTest -->
+      <class name="testCases.TC02_ShopSelectingUnitedStatesTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="selectUnitedStatesAndVerifyProducts"/>
+        </methods>
+      </class> <!-- testCases.TC02_ShopSelectingUnitedStatesTest -->
+    </classes>
+  </test> <!-- Pixel_5(failed) -->
+</suite> <!-- Failed suite [Appium Test Suite] -->
